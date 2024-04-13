@@ -16,6 +16,7 @@ JOBS = [{
     'id': 3,
     'title': 'Data Engineer',
     'location': 'Kano, Nigeria',
+    'Salary': 'N1,500,000',
 }, {
     'id': 4,
     'title': 'Full stack webdeveloper',
