@@ -10,16 +10,21 @@
       height:360px;
       width: 100%;
       object-fit:cover;
+      margin-bottom:16px
     }
   </style>
 </head>
 <body>
+  {% include 'nav.html'%}
+  <img class="img-fluid" id="careers" src="https://056a2334-bfad-4d7e-8184-3f6784a7487e-00-uk9fi3odyz3j.spock.replit.dev/static/careers.jpg" 
+    >
    <div class="container">
      <h1 class ="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-     <img class="img-fluid" id="careers" src="https://056a2334-bfad-4d7e-8184-3f6784a7487e-00-uk9fi3odyz3j.spock.replit.dev/static/careers.jpg" 
-        >
-     <h2 class="text-center mt-2 mb-4">About 
-       Ecoplorer</h2>
+    
+     <div class="row" style="margin-bottom:16px">
+
+       <div class="col-md-6">
+       
       <p class="lead">
         They may also collaborate with other teams to 
         develop data-driven strategies and 
@@ -31,7 +36,12 @@
         analysis. Overall, their work helps 
         businesses make informed decisions and drive 
         growth through data-driven insights.
-      </p>     
+      </p>
+         </div>
+       <div class="d-none d-md-block col-md-6">
+       <img src="/static/people.jpg" style="height:320px; border-radius:6px" alt="">
+         </div>
+       </div>
       <h2 class="text-center mt-2 mb-4">Job openings</h2>
       <div >
           {% for job in jobs %}
@@ -42,10 +52,8 @@
       <div class = "text-center">
       <button class="btn btn-primary btn-lg">Contact 
       Us</button
-                                <br>
-        <p class="mt-4">Copyright 2022 - Ecoplorer</p>
       </div>
   </div>
-  
+  {% include 'footer.html'%}
 </body>
 </html>
